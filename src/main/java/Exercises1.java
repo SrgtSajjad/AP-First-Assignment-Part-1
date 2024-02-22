@@ -2,9 +2,13 @@ public class Exercises1 {
     /*
     implement a function that returns factorial of given n
      */
-    public long factorial(int n) {
-        // TODO
-        return 0;
+    public static long factorial(int n) {
+        int result = 1;
+        for (int i = 1; i <= n; i++) {
+                result = result * i;
+        }
+
+        return result;
     }
 
 
@@ -36,7 +40,6 @@ public class Exercises1 {
 
 
     public static void main(String[] args) {
-        // test your code here!
     }
 
 }
