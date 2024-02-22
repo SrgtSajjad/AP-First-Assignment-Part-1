@@ -42,8 +42,17 @@ public class Exercises1 {
     *****
 
      */
-    public char[][] generateTriangle(int rows) {
-        // TODO
+    public static char[][] generateTriangle(int rows) {
+        for (int i = 1; i <= rows; i++)
+        {
+            for (int j = 0; j < i; j++)
+            {
+                System.out.print("*");
+
+            }
+            if (i != rows)
+                System.out.println();
+        }
         return null;
     }
 
