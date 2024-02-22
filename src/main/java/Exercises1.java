@@ -43,17 +43,14 @@ public class Exercises1 {
 
      */
     public static char[][] generateTriangle(int rows) {
-        for (int i = 1; i <= rows; i++)
+        String line = "*";
+        char[][] triangle = new char[rows][];
+        for (int i = 0; i < rows; i++)
         {
-            for (int j = 0; j < i; j++)
-            {
-                System.out.print("*");
-
-            }
-            if (i != rows)
-                System.out.println();
+            triangle[i] = line.toCharArray();
+            line = line + "*";
         }
-        return null;
+        return triangle;
     }
 
 
